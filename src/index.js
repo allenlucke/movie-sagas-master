@@ -21,7 +21,7 @@ const sagaMiddleware = createSagaMiddleware();
 // Create one store that all components can use
 const storeInstance = createStore(
     rootReducer,
-    // Add sagaMiddleware and logger to our store
+    // Add sagaMiddleware to our store
     applyMiddleware(sagaMiddleware, logger),
 );
 
